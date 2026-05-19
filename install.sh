@@ -1,19 +1,16 @@
 #!/usr/bin/env bash
-# MockaSort marketplace installer
+# Fallback manual installer — prefer /plugin marketplace add MockaSort-Studio/marketplace
 # Usage: curl -sL https://raw.githubusercontent.com/MockaSort-Studio/marketplace/main/install.sh | bash -s <plugin-name>
 set -euo pipefail
 
 PLUGIN="${1:-}"
-REGISTRY="https://raw.githubusercontent.com/MockaSort-Studio/marketplace/main/plugins.json"
+[ -z "$PLUGIN" ] && { echo "Usage: install.sh <plugin-name>"; echo "Or use: /plugin marketplace add MockaSort-Studio/marketplace"; exit 1; }
 
-[ -z "$PLUGIN" ] && { echo "Usage: install.sh <plugin-name>"; echo "Available plugins:"; curl -sL "$REGISTRY" | python3 -c "import json,sys; [print(' ',p['name'],'-',p['description'][:60]) for p in json.load(sys.stdin)['plugins']]"; exit 1; }
-
-INSTALL_SCRIPT=$(curl -sL "$REGISTRY" | python3 -c "
-import json,sys
-plugins = json.load(sys.stdin)['plugins']
-match = next((p for p in plugins if p['name'] == '$PLUGIN'), None)
-if not match: print('ERROR: unknown plugin'); exit(1)
-print(match['install_script'])
-")
-
-curl -sL "$INSTALL_SCRIPT" | bash
+case "$PLUGIN" in
+  hall-of-automata-cli)
+    curl -sL https://raw.githubusercontent.com/MockaSort-Studio/hall-of-automata-cli/master/scripts/install.sh | bash
+    ;;
+  *)
+    echo "Unknown plugin: $PLUGIN"; exit 1
+    ;;
+esac

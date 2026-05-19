@@ -1,0 +1,17 @@
+{
+  "name": "mocksort",
+  "owner": {
+    "name": "MockaSort Studio",
+    "url": "https://github.com/MockaSort-Studio"
+  },
+  "plugins": [
+    {
+      "name": "hall-of-automata-cli",
+      "source": {
+        "source": "github",
+        "repo": "MockaSort-Studio/hall-of-automata-cli"
+      },
+      "description": "Persistent local orchestrator for multi-task projects. Plan, dispatch, and coordinate specialist agents via a design conversation with Old Major."
+    }
+  ]
+}
