@@ -7,10 +7,10 @@ The official Claude Code marketplace is unnecessary for Hall plugins, which are 
 ## Install a plugin
 
 ```bash
-curl -sL https://raw.githubusercontent.com/MockaSort-Studio/marketplace/main/install.sh | bash -s hall-of-automata
+curl -sL https://raw.githubusercontent.com/MockaSort-Studio/marketplace/main/install.sh | bash -s hall-of-automata-cli
 ```
 
-Or install a specific plugin directly:
+Or install directly from the plugin repo:
 
 ```bash
 curl -sL https://raw.githubusercontent.com/MockaSort-Studio/hall-of-automata-cli/master/scripts/install.sh | bash
@@ -20,7 +20,7 @@ curl -sL https://raw.githubusercontent.com/MockaSort-Studio/hall-of-automata-cli
 
 | Plugin | Description | Version |
 |--------|-------------|---------|
-| [hall-of-automata](https://github.com/MockaSort-Studio/hall-of-automata-cli) | Persistent local orchestrator — plan, dispatch, and coordinate specialist agents with Old Major | 0.1.0 |
+| [hall-of-automata-cli](https://github.com/MockaSort-Studio/hall-of-automata-cli) | Persistent local orchestrator — plan, dispatch, and coordinate specialist agents with Old Major | 0.1.0 |
 
 ## Adding a plugin
 

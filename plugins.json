@@ -2,8 +2,8 @@
   "version": "1",
   "plugins": [
     {
-      "name": "hall-of-automata",
-      "display_name": "Hall of Automata",
+      "name": "hall-of-automata-cli",
+      "display_name": "Hall of Automata CLI",
       "description": "Persistent local orchestrator for multi-task projects. Plan, dispatch, and coordinate specialist agents via a design conversation with Old Major.",
       "repository": "https://github.com/MockaSort-Studio/hall-of-automata-cli",
       "latest": "0.1.0",
