@@ -11,10 +11,10 @@ Self-hosted Claude Code plugin registry for Hall-native plugins. No Anthropic ma
 
 **Step 2 — install a plugin:**
 ```
-/plugin install hall-of-automata-cli@mocksort
+/plugin install hall-of-automata-cli@mockasort
 ```
 
-That's it. Updates come in automatically via `/plugin marketplace update mocksort`.
+That's it. Updates come in automatically via `/plugin marketplace update mockasort`.
 
 ## Available plugins
 
