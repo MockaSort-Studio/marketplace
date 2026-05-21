@@ -10,7 +10,7 @@
       "source": {
         "source": "github",
         "repo": "MockaSort-Studio/hall-of-automata-cli",
-        "ref": "v1.0.0"
+        "ref": "v1.1.0"
       },
       "description": "Persistent local orchestrator for multi-task projects. Plan, dispatch, and coordinate specialist agents via a design conversation with Old Major."
     }
